@@ -1,0 +1,24 @@
+{
+  "name": "consideration_station",
+  "version": "1.0.0",
+  "description": "A back-end for an imaginary social media app where users can share their thoughts - set up using MongoDB,Mongoose,Express.js, and Node.js. Boot camp challenge.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/steadysamwise4/consideration_station.git"
+  },
+  "author": "Sam Davenport",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/steadysamwise4/consideration_station/issues"
+  },
+  "homepage": "https://github.com/steadysamwise4/consideration_station#readme",
+  "dependencies": {
+    "express": "^4.17.2",
+    "mongoose": "^6.1.7"
+  }
+}
