@@ -81,7 +81,7 @@ const addDateSuffix = date => {
       hour = 12;
     }
   
-    const minutes = dateObj.getMinutes();
+    let minutes = dateObj.getMinutes();
     if (minutes < 10) {
         minutes = `0${minutes}`;
       };
