@@ -65,11 +65,20 @@ const userController = {
           return Thought.deleteMany({ username: deletedUser.username })
         })
         .then(deletedCount => {
-          if(!deletedCount) {
+          console.log(deletedCount);
+          return User.updateMany(
+            { friends: params.id},
+            { $pull: { friends: params.id } },
+            { new: true }
+          )
+        })
+        .then(acknowleged => {
+          console.log(acknowleged);
+          if(!acknowleged) {
             res.status(404).json({ message: 'something went wrong!'});
             return;
           }
-          res.json(deletedCount)
+          res.json(acknowleged)
         })
         
         .catch(err => res.json(err));
